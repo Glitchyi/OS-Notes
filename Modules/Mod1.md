@@ -68,6 +68,8 @@ The bootstrap program locates the OS kernel and loads into memory, the program i
 the init process ithe the first system process in Unix based systems.
 The system awaits triggers which are either hardware or software (system calls or called monitor call). 
 
+![[Images/Pasted image 20230723093752.png]]
+
 ## System Calls
 System calls are the Interfaces the operating system provides for process to make use of the functionalities the operating system provides.
 
@@ -98,7 +100,7 @@ Kernel is the core of the system which is also the first program that launches w
 | Information Maintenance | get/set time or date, get/set system data, get/set process or file or device attributes                                       |
 | Communication           | Create/delete communication connections , send/receive messages, transfer states information, attach or detach remote devices |
 
-## [[Topics/Operating System Structure|Operating System Structure]]
+## ![[Topics/Operating System Structure|Operating System Structure]]
 #important 
 There are many was we can structure an operating system
 -  Simple structure
