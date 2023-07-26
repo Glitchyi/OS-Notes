@@ -11,8 +11,12 @@
             "id": "a6ee92bf3e736518",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Modules/Mod4.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Modules/Mod4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Modules/Mod4.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Modules/Mod4.md"
+              }
             }
           }
         ],
@@ -141,12 +149,13 @@
   },
   "active": "a6ee92bf3e736518",
   "lastOpenFiles": [
+    "Images/Pasted image 20230726190845.png",
+    "OS CST206.md",
     "Topics/Schedulers.md",
     "Modules/Mod4.md",
     "Images/Pasted image 20230726151009.png",
     "Modules/Mod3.md",
     "README.md",
-    "OS CST206.md",
     "Topics/Types of Operating Systems.md",
     "Topics/Producer Consumer.md",
     "Topics/Operating System Structure.md",

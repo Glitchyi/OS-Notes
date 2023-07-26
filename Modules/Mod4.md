@@ -50,3 +50,27 @@ In this situation we make the partitions during runtime and allow the partitions
 ##### External Fragmentation
 The memory situation may become non contiguous after a bit while doing variable/Dynamic partitioning, This will lead to us not having a single memory location big enough to run a big program, a solution to this is by compaction, i.e. whenever memory becomes free we pool it together, this technique is also called defragmentation.
 
+### Non Contiguous Memory Management 
+Non-contiguous memory management is a memory allocation technique used in computer systems to manage physical memory (RAM) in a way that allows processes to be allocated memory in non-contiguous or fragmented chunks. In contrast, contiguous memory management allocates memory in a contiguous, continuous block.
+#important 
+```
+Logical Address is the memory of the process
+```
+
+Two possible methods for This type is
+#### Segmentation
+Segmentation is a memory management scheme in which a logical  address is made up of many segments, each segment is named and numbers and referred to by the number and it also has a length of the segment. 
+
+A logical address consists of two parts: 
+- A segment number, s
+- offset to that segment, d
+The segment number is used to identify the segment, the offset is value which is between 0 and the segment limit, when a segment is legal we add it to the segment base to produce the physical address in memory of a desired bit.
+The segments map to the logical address.
+##### Hardware
+![[Images/Pasted image 20230726190845.png]]
+
+
+#### Paging
+By breaking physical memory into fixed sized block called frames, as well as breaking the process memory (logical memory) into block of the same size called pages. We basically slot the pages into available memory frames and map accordingly to provide the logical address the memory it needs.
+
+The page and frame sizes are determined by hardware, usually its a power of 2 varying between 512 bytes to 1Gb per page.
