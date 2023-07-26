@@ -2,7 +2,7 @@
 Use [Obsidian.md](https://obsidian.md) for optimal note consumption
 
 ---
-## Steps for using these notes.
+## Steps for using these notes. (Laptop use would be convenient)
 You can just browse the notes from this page by pressing the 
 ```
 View code
