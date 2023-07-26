@@ -25,6 +25,7 @@ while (true) {
 ```
 
 ## Race Condition and Critical Section
+
 ### Race Condition
 The race condition is a situation when several process try to acces or modify the same piece of data simultaneously, the final output of the data is dependent on the order of the events happening.
 
@@ -98,4 +99,60 @@ The hardware-based solutions to the critical-section problem are complicated as 
 The main problem we may face is the busy waiting, a process may end up in the process of waiting for a long time, and ends up calling the acquire function a lot of times. This is also called the spinlock because the process keeps running in the background until it gets the chance to use the CPU.
 
 ## Semaphores 
-Semaphores are software solutions which were initially proposed by Dutch Scientist Edger Dijkstra, they behave similar to mutex locks but proved more sophisticated ways to synchronize processes.
+Semaphores are software solutions which were initially proposed by Dutch Scientist Edger Dijkstra, they behave similar to mutex locks but proved more sophisticated ways to synchronize processes. 
+
+Semaphores are integer variables typically part of the operating system or the programming language, It can only be accessed using two atomic operations:
+- wait() : P, which comes from the Dutch word proberen, which means to test.
+- Signal() : V, from the word verhogen, which means to increment in Dutch.
+
+```c
+wait(S){
+	while (S<=0);
+	S - -;
+}
+
+Critical Secion 
+
+signal(S){
+	S++;
+}
+```
+
+The process checks for S which is the number of processes which the CPU can execute, the principle behind semaphore is that when it is possible to use the CPU  a process reduces 1 from the S and starts executing, the process cannot execute if S is < 1 or, and also note that after completing the process the S value is incremented by the process by 1, to let other process know that it has finished execution.
+
+### Types of Semaphores
+According to the range of S we can classify semaphores into two types:
+- **Binary** - S has two values either 0 or 1
+- **Counting** - S will have a bigger value, this mean it can accommodate multiple processes running at the same time.
+
+Semaphore also suffer from the [[#Disadvantage of using Mutex Locks]] 
+
+### Solution to Busy Waiting
+When a process finds itself that it has to wait for the semaphore to become available, rather than trying to busy wait, what it can do is call the block method on itself and stop execution until it has been called by another process, When the semaphore becomes available the signal method can call the process and inform them that they can try to acquire the semaphore lock 
+
+```c
+typedef struct{
+	int value;
+	struct process *list;
+} semaphore;
+
+wait(semaphore *S){
+	S->value--;
+	if (S->value < 0){
+			add this process to S->list;
+			block();
+		}
+}
+
+signal(semaphore *S) {
+		S->value++;
+		if (S->value <= 0) remove a process P from S->list;
+		wakeup(P);
+	}
+}
+```
+
+
+## Deadlocks and Starvation
+#important 
+A deadlock situation occurs in concurrent systems when two or more processes (or threads) are unable to proceed because each is waiting for the other to release a resource that it needs to continue execution. As a result, the processes end up in a circular waiting state, and none of them can make progress. Deadlocks can lead to a system freeze, where no further work can be done, and the processes are effectively stuck.

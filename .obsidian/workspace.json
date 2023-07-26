@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modules/Mod3.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modules/Mod3.md",
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modules/Mod3.md",
+                "file": "README.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Modules/Mod3.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,12 +147,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e858822437176a0c",
+  "active": "a6ee92bf3e736518",
   "lastOpenFiles": [
+    "Images/Pasted image 20230726120503.png",
+    "Modules/Mod3.md",
     "Topics/Operating System Structure.md",
     "Modules/Mod1.md",
     "OS CST206.md",
-    "Modules/Mod3.md",
     "Topics/Inter Process Communication.md",
     "Topics/Producer Consumer.md",
     "Modules/Mod2.md",
@@ -189,7 +190,6 @@
     "Topics/DB Design Guidelines.md",
     "Topics/NoSQL.md",
     "Modules/Mod 5.md",
-    "Topics/Schedules.md",
     "Images/Guildelins.pdf",
     "Modules/Mod 1.html",
     "Modules",
