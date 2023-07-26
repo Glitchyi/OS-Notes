@@ -11,12 +11,8 @@
             "id": "a6ee92bf3e736518",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modules/Mod4.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modules/Mod4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modules/Mod4.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Modules/Mod4.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -149,11 +141,11 @@
   },
   "active": "a6ee92bf3e736518",
   "lastOpenFiles": [
-    "Images/Pasted image 20230726151009.png",
+    "Topics/Schedulers.md",
     "Modules/Mod4.md",
+    "Images/Pasted image 20230726151009.png",
     "Modules/Mod3.md",
     "README.md",
-    "Topics/Schedulers.md",
     "OS CST206.md",
     "Topics/Types of Operating Systems.md",
     "Topics/Producer Consumer.md",
@@ -177,7 +169,6 @@
     "OS_MOD_3/OS MOD 3/Process Synchronization.md",
     "OS_MOD_3/OS MOD 3/Pasted image 20230603205018.png",
     "OS_MOD_3/OS MOD 3/Pasted image 20230603200204.png",
-    "OS_MOD_3/OS MOD 3/Pasted image 20230603200143.png",
     "OS_MOD_3/OS MOD 3/Locks and Mutexes.md",
     "OS_MOD_3/OS MOD 3/Monitors.md",
     "OS_MOD_3/OS MOD 3/mutually exclusive.md",

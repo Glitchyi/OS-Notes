@@ -2,7 +2,21 @@
 This is the task of subdividing the memory among different process is called memory management. We aim to find the most efficient way of utilizing the memory in the computer.
 
 ## Basic Hardware
-Main memory and the registers built into the processor itself are the only general-purpose storage that the CPU can access directly. Machine Instructions take 
+Main memory and the registers built into the processor itself are the only general-purpose storage that the CPU can access directly. There are machine instructions that take memory addresses as arguments, but none that take disk addresses. Therefore, any instructions in execution, and any data being used by the instructions, must be in one of these direct-access storage devices. If the data are not in memory, they must be moved there before the CPU can operate on them. 
+
+Registers are memory location that are built into the CPU and are accessible within 1 CPU cycle, to prevent taking more CPU cycles to fetch the memory in the main memory there will be cache in-between the main memory and CPU to temporarily hold data for faster access.
+
+### Protection
+For proper system operation we must protect the operating system from acces by the user processes. On multiuser systems we must separate memory of each user,  This protection must be provided by the hardware because the operating system doesn’t usually intervene between the CPU and its memory accesses. we can sperate per-process memory which isolates each process from each other and thereby providing privacy.
+
+To separate memory spaces we determine legal range each process may acces and ensure that it can acces only that specified memory addresses, we store this using two registers
+- Base register: stores the smallest legal physical memory address
+- Limit register: the size of the legal range.
+
+e.g. if the base register holds 300040 and the limit register is 120900, then the program can legally access all addresses from 300040 through 420939 (inclusive).
+
+Any attempt by a program executing in user mode to access operating-system memory or other users’ memory results in a trap to the operating system, which treats the attempt as a fatal error. This prevents accidental data modification or retrieval and improves the security of the overall system
+
 
 ## Memory Management Techniques
 
