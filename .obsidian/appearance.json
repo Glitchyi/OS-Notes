@@ -1,0 +1,13 @@
+{
+  "accentColor": "#00c2a2",
+  "cssTheme": "",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Google Sans Display",
+  "textFontFamily": "Google Sans",
+  "monospaceFontFamily": "Google Sans",
+  "baseFontSize": 16,
+  "translucency": true,
+  "nativeMenus": false,
+  "enabledCssSnippets": [],
+  "showViewHeader": true
+}
