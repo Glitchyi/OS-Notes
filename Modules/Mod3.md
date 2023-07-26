@@ -1,3 +1,4 @@
+ ## Producer Consumer Problem
  ![[Topics/Producer Consumer|Producer Consumer]]
 
 ```c
@@ -156,3 +157,61 @@ signal(semaphore *S) {
 ## Deadlocks and Starvation
 #important 
 A deadlock situation occurs in concurrent systems when two or more processes (or threads) are unable to proceed because each is waiting for the other to release a resource that it needs to continue execution. As a result, the processes end up in a circular waiting state, and none of them can make progress. Deadlocks can lead to a system freeze, where no further work can be done, and the processes are effectively stuck.
+
+### Bounded Buffer problem
+[[#Producer Consumer Problem]]
+
+### Solution Using 3 Semaphores
+We make use of three semaphores :
+1) Empty - Used to keep track of empty slots, init value = max size of the buffer
+2) Full - Used to keep track of filled slots in the buffer or the number of items in the buffer, init value  = 0
+3) Mutex - binary semaphore used to acquire and release lock
+
+#### Producer
+
+```c
+do {
+	...
+	/* produce an item */
+	...
+	wait(empty); //wait until empty >0 and then decrement empty
+	wait(mutex); //acquire lock
+	...
+	/* add produced item to the buffer */
+	...
+	signal(mutex); //release lock
+	signal(full); //increment full
+} while (true);
+```
+
+#### Consumer
+
+```c
+do {
+	wait(full); //wait until full>0 and then decrmnt full
+	wait(mutex); //acquire lock
+	...
+	/* remove an item from buffer */
+	...
+	signal(mutex); //release lock
+	signal(empty); //increment empty
+	...
+	/* consume the item */
+	...
+} while (true);
+```
+
+### The Readers-Writer Problem
+The Readers-Writers problem is another classic synchronization problem in concurrent programming. It involves two types of processes: readers and writers. Readers only read shared data, while writers both read and modify (write) the shared data.
+
+The goal of the Readers-Writers problem is to allow multiple readers to access the shared data simultaneously, as reading does not modify the data and is considered safe concurrently. However, it restricts writers from accessing the shared data simultaneously to prevent data inconsistency and race conditions.
+
+### Solution Using 2 Semaphores
+writers have exclusive access to the shared database while writing to
+the database.
+
+The semaphores 
+
+
+### Dining Philosophers Problem
+programming. It involves a set of philosophers sitting around a dining table, where each philosopher alternates between thinking and eating. There are forks placed between each pair of adjacent philosophers. To eat, a philosopher needs to pick up both forks on their left and right sides. The challenge is to design a synchronization solution to prevent deadlocks and ensure that all philosophers get a chance to eat without encountering any race conditions.

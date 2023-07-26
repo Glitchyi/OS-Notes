@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Modules/Mod4.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Modules/Mod4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Modules/Mod4.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Modules/Mod4.md"
               }
             }
           }
@@ -149,18 +149,23 @@
   },
   "active": "a6ee92bf3e736518",
   "lastOpenFiles": [
-    "Images/Pasted image 20230726120503.png",
+    "Images/Pasted image 20230726151009.png",
+    "Modules/Mod4.md",
     "Modules/Mod3.md",
-    "Topics/Operating System Structure.md",
-    "Modules/Mod1.md",
-    "OS CST206.md",
-    "Topics/Inter Process Communication.md",
-    "Topics/Producer Consumer.md",
-    "Modules/Mod2.md",
-    "Topics/Scheduling Algorithms.md",
-    "Images/Pasted image 20230725193515.png",
-    "Topics/Types of Operating Systems.md",
+    "README.md",
     "Topics/Schedulers.md",
+    "OS CST206.md",
+    "Topics/Types of Operating Systems.md",
+    "Topics/Producer Consumer.md",
+    "Topics/Operating System Structure.md",
+    "Topics/Scheduling Algorithms.md",
+    "Topics/Inter Process Communication.md",
+    "Topics",
+    "Modules/Mod2.md",
+    "Modules/Mod1.md",
+    "Modules",
+    "Images/Pasted image 20230726120503.png",
+    "Images/Pasted image 20230725193515.png",
     "Images/Pasted image 20230723093752.png",
     "Images/Pasted image 20230722234825.png",
     "Images/Pasted image 20230722233939.png",
@@ -173,7 +178,6 @@
     "OS_MOD_3/OS MOD 3/Pasted image 20230603205018.png",
     "OS_MOD_3/OS MOD 3/Pasted image 20230603200204.png",
     "OS_MOD_3/OS MOD 3/Pasted image 20230603200143.png",
-    "OS_MOD_3/OS MOD 3/Pasted image 20230603200109.png",
     "OS_MOD_3/OS MOD 3/Locks and Mutexes.md",
     "OS_MOD_3/OS MOD 3/Monitors.md",
     "OS_MOD_3/OS MOD 3/mutually exclusive.md",
@@ -186,14 +190,10 @@
     "Unconfirmed 288902.crdownload",
     "Topics/Untitled.md",
     "Untitled.canvas",
-    "README.md",
     "Topics/DB Design Guidelines.md",
     "Topics/NoSQL.md",
-    "Modules/Mod 5.md",
     "Images/Guildelins.pdf",
     "Modules/Mod 1.html",
-    "Modules",
-    "Topics",
     "COA"
   ]
 }
